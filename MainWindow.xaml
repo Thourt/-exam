@@ -8,6 +8,28 @@
         Title="MainWindow" Height="800" Width="400"
         ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="R0 = " Grid.Column="0"/>
+            <Label Content="0" Grid.Column="0" HorizontalAlignment="Center" Name="Register0"/>
+            <Label Content="R1 = " Grid.Column="1"/>
+            <Label Content="0" Grid.Column="1" HorizontalAlignment="Center" Name="Register1"/>
+            <Label Content="R2 = " Grid.Column="2"/>
+            <Label Content="0" Grid.Column="2" HorizontalAlignment="Center" Name="Register2"/>
+            <Label Content="R3 = " Grid.Column="3"/>
+            <Label Content="0" Grid.Column="3" HorizontalAlignment="Center" Name="Register3"/>
+        </Grid>
+        <TextBox Grid.Row="1" TextWrapping="Wrap" AcceptsReturn="True" Name="Code"/>
+        <Button Grid.Row="2" Margin="110" Content="Выполнить" Name="Start" Click="Start_Click"/>
     </Grid>
 </Window>
